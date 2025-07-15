@@ -21,6 +21,7 @@ Modifier la taille limite :
 ## 📦 Liste des starters
 
 - [`symfony-tailwind`](./symfony-tailwind/) — Symfony + Tailwind CSS v4
+- [`symfony-tailwind-flowbite`](./symfony-tailwind-flowbite/) — Symfony + Tailwind CSS v4 avec flowbite
 
 
 ## 🧰 Utilisation
@@ -92,4 +93,4 @@ symfony serve
 symfony console tailwind:build -w
 ````
 
-Le projet est disponible [127.0.0.1:8000](127.0.0.1:8000)
+Le projet est disponible à  [https://127.0.0.1:8000](https://127.0.0.1:8000)
