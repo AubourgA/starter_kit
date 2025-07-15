@@ -34,17 +34,17 @@ cd starter_kit
 git sparse-checkout set nom_starter_kit
 ````
 
-### 2. Copier le starter dans un nouveau dossier
+### 2. Copier le dossier du starter kit dans le dossier courant
 
 ````bash
-cp -R starter_kit/nom_starter_kit nouveau_dossier
+cp -R starter_kit/nom_starter_kit .
 ````
 
 # Type Starter kit : Symfony
 
 ### 1. Installer le dossier vendor
 
-Se rendre dans le nouveau_dossier
+Se rendre dans le dossier du starter kit
 
 ````bash
 composer install
@@ -68,29 +68,30 @@ git add remote origin [nom_du_repo.git]
 git push -u origin main
 ````
 
-### 3. Télécharger et mettre le fichier tailwind
 
-Telecharger le fichier executalbe de tailwind :
-
-
-[`https://github.com/tailwindlabs/tailwindcss/releases/download/v4.1.11/tailwindcss-windows-x64.exe`](https://github.com/tailwindlabs/tailwindcss/releases/download/v4.1.11/tailwindcss-windows-x64.exe)
-
-### 4. Initialiser le dossier de reception
+### 4. Installer et lancer tailwind
 Avec la commande suivante, cela va créer le dossier pour tailwind
 ````bash
 symfony console tailwind:build -w
 ````
+### 4 bis (Mode Manuel) Si erreur sur l'instalation :
+
+Telecharger le fichier executable de tailwind ():
+
+
+[`https://github.com/tailwindlabs/tailwindcss/releases/download/v4.1.11/tailwindcss-windows-x64.exe`](https://github.com/tailwindlabs/tailwindcss/releases/download/v4.1.11/tailwindcss-windows-x64.exe)
 
 Copier le fichier **tailwindcss-windows-x64.exe**
 ````
 var/tailwind/v4.1.11/tailwindcss-windowsx64.exe
 ````
 
+et retour a l'étape 4.
+
 ### 5. Lancer le projet
 
 ```bash
 symfony serve
-symfony console tailwind:build -w
 ````
 
 Le projet est disponible à  [https://127.0.0.1:8000](https://127.0.0.1:8000)
