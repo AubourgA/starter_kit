@@ -4,8 +4,6 @@ Ce repo contient plusieurs variantes de starters Symfony et autres frameworks.
 
 ## ⚠️ Pré-Requis pour mes starter kits
 - PHP v8.4
-- Symfony 7.3
-- React 19
 - WampServer 3.3
   
 ## ⚙️ Configuration
